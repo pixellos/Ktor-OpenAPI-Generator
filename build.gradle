@@ -1,12 +1,13 @@
 plugins {
-    id "org.jetbrains.kotlin.jvm" version "$kotlin_version"
+    id 'org.jetbrains.kotlin.jvm' //version '1.4.31'
     id 'maven-publish'
 }
 
 group 'com.github.papsign'
-version '0.2-beta.15-SNAPSHOT'
+version '0.2-beta.19-SNAPSHOT'
 
 repositories {
+
     mavenCentral()
     jcenter()
 }
@@ -49,8 +50,4 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.6"
-}
-
-wrapper {
-    gradleVersion = '6.0.1'
 }
